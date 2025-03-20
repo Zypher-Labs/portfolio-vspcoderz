@@ -1,0 +1,27 @@
+* {
+  cursor: url('../assets/cursors/pointer.cur'), auto !important;
+}
+
+a, button, [role="button"], select, summary {
+  cursor: url('../assets/cursors/link.cur'), pointer !important;
+}
+
+input[type="text"], textarea {
+  cursor: url('../assets/cursors/beam.cur'), text !important;
+}
+
+.window-header {
+  cursor: url('../assets/cursors/move.cur'), move !important;
+}
+
+:disabled {
+  cursor: url('../assets/cursors/unavailable.cur'), not-allowed !important;
+}
+
+[data-loading="true"] {
+  cursor: url('../assets/cursors/busy.ani'), progress !important;
+}
+
+[data-resizable="true"] {
+  cursor: url('../assets/cursors/horz.cur'), ew-resize !important;
+}

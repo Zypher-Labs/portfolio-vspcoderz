@@ -1,3 +1,5 @@
+@import './styles/cursors.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -43,7 +45,16 @@
   body {
     @apply bg-background text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
+    cursor: url('/src/assets/cursors/pointer.cur'), auto;
   }
+}
+
+* {
+  cursor: url('/src/assets/cursors/link.cur'), pointer;
+}
+
+input, textarea {
+  cursor: url('/src/assets/cursors/text.cur'), text;
 }
 
 /* Custom OS-like styles */
@@ -87,11 +98,11 @@
 }
 
 .taskbar {
-  @apply fixed bottom-4 left-0 right-0 mx-auto h-14 max-w-3xl bg-card/30 backdrop-blur-md border border-white/10 rounded-full shadow-lg;
+  @apply fixed bottom-4 bg-amber-100/30 left-0 right-0 mx-auto h-14 max-w-3xl backdrop-blur-md border border-white/10 rounded-full shadow-lg;
 }
 
 .app-icon {
-  @apply w-10 h-10 rounded-full flex items-center justify-center bg-secondary/80 text-secondary-foreground hover:bg-accent hover:text-accent-foreground transition-colors shadow-md;
+  @apply w-10 h-10 rounded-md flex items-center justify-center bg-secondary/40 text-secondary-foreground hover:bg-accent hover:text-accent-foreground transition-colors shadow-md;
 }
 
 .terminal {

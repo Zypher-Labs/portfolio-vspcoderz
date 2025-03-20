@@ -15,16 +15,64 @@ import {
   CgNotes
 } from 'react-icons/cg';
 
-// App definitions
+// App definitions with icon support
 const apps = [
-  { id: 'terminal', title: 'Terminal', icon: <CgTerminal size={24} />, component: <Terminal /> },
-  { id: 'about', title: 'About Me', icon: <CgProfile size={24} />, component: <AboutMe /> },
-  { id: 'skills', title: 'Skills', icon: <CgCode size={24} />, component: <Skills /> },
-  { id: 'projects', title: 'Projects', icon: <CgBriefcase size={24} />, component: <Projects /> },
-  { id: 'contact', title: 'Contact', icon: <CgMail size={24} />, component: <Contact /> },
-  { id: 'resume', title: 'Resume', icon: <CgFileDocument size={24} />, component: <Resume /> },
-  { id: 'gallery', title: 'Gallery', icon: <CgImage size={24} />, component: <Gallery /> },
-  { id: 'notes', title: 'Notes', icon: <CgNotes size={24} />, component: <Notes /> },
+  { 
+    id: 'terminal', 
+    title: 'Terminal', 
+    icon: <img src='/src/assets/icons/terminal.png' />,
+    iconUrl: <img src='/src/assets/icons/terminal.png' />, // Add your icon path here
+    component: <Terminal /> 
+  },
+  { 
+    id: 'about', 
+    title: 'About Me', 
+    icon: <CgProfile size={24} />,
+    iconUrl: '/src/assets/icons/about.png', // Add your icon path here
+    component: <AboutMe /> 
+  },
+  { 
+    id: 'skills', 
+    title: 'Skills', 
+    icon: <CgCode size={24} />,
+    iconUrl: '/src/assets/icons/skills.png', // Add your icon path here
+    component: <Skills /> 
+  },
+  { 
+    id: 'projects', 
+    title: 'Projects', 
+    icon: <CgBriefcase size={24} />,
+    iconUrl: '/src/assets/icons/projects.png', // Add your icon path here
+    component: <Projects /> 
+  },
+  { 
+    id: 'contact', 
+    title: 'Contact', 
+    icon: <CgMail size={24} />,
+    iconUrl: '/src/assets/icons/contact.png', // Add your icon path here
+    component: <Contact /> 
+  },
+  { 
+    id: 'resume', 
+    title: 'Resume', 
+    icon: <CgFileDocument size={24} />,
+    iconUrl: '/src/assets/icons/resume.png', // Add your icon path here
+    component: <Resume /> 
+  },
+  { 
+    id: 'gallery', 
+    title: 'Gallery', 
+    icon: <CgImage size={24} />,
+    iconUrl: '/src/assets/icons/gallery.png', // Add your icon path here
+    component: <Gallery /> 
+  },
+  { 
+    id: 'notes', 
+    title: 'Notes', 
+    icon: <CgNotes size={24} />,
+    iconUrl: '/src/assets/icons/notes.png', // Add your icon path here
+    component: <Notes /> 
+  },
 ];
 
 function AboutMe() {
@@ -430,4 +478,4 @@ export function Desktop() {
       />
     </div>
   );
-} 
+}
