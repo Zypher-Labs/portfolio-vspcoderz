@@ -99,29 +99,31 @@ function Skills() {
   const skillCategories = [
     {
       name: 'Frontend',
-      skills: ['React', 'Vue.js', 'Angular', 'HTML5', 'CSS3/SASS', 'JavaScript/TypeScript']
+      skills: ['React', 'Vue.js', 'Sevlte', 'HTML5', 'CSS3/SASS', 'JavaScript/TypeScript']
     },
     {
       name: 'Backend',
-      skills: ['Node.js', 'Express', 'Python', 'Django', 'PHP', 'Ruby on Rails']
+      skills: ['Node.js', 'Express', 'Python', 'PHP']
     },
     {
       name: 'Database',
-      skills: ['MongoDB', 'PostgreSQL', 'MySQL', 'Redis', 'Firebase']
+      skills: ['MongoDB', 'MySQL', 'Firebase']
     },
     {
       name: 'DevOps',
-      skills: ['Docker', 'Kubernetes', 'AWS', 'CI/CD', 'Git']
+      skills: ['Docker', 'AWS', 'Git']
     },
     {
       name: 'Other',
-      skills: ['Three.js', 'WebGL', 'Framer Motion', 'RESTful APIs', 'GraphQL']
+      skills: ['Three.js', 'WebGL', 'Framer Motion', 'React-three fibre', 'Tailwind CSS', 'Bootstrap', 'Material UI',]
     }
   ];
 
   return (
-    <div className="p-4">
-      <h2 className="text-2xl font-bold mb-4">Skills</h2>
+    <div className="p-4 flex flex-col">
+      <div className="flex items-center justify-center mb-4 w-full bg-zinc-700 rounded-md">
+      <h2 className="text-2xl font-bold ">Skills</h2>
+      </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {skillCategories.map((category, index) => (
           <motion.div 
@@ -139,8 +141,22 @@ function Skills() {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ delay: index * 0.1 + skillIndex * 0.05 }}
+                  className="flex items-center gap-2 py-1"
                 >
-                  {skill}
+                  <motion.div 
+                    className="w-6 h-6 flex items-center justify-center"
+                    whileHover={{ scale: 1.1 }}
+                  >
+                    <img 
+                      src={`/assets/icons/${skill.toLowerCase()}.png`} 
+                      alt={skill}
+                      className="w-5 h-5 object-contain"
+                      onError={(e) => {
+                        e.target.src = '/assets/icons/default-skill.png';
+                      }}
+                    />
+                  </motion.div>
+                  <span className="text-sm">{skill}</span>
                 </motion.li>
               ))}
             </ul>

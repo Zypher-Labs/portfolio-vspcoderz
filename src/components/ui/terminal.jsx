@@ -109,19 +109,19 @@ focusing on creating beautiful and functional user experiences.`
         break;
       case 'neofetch':
         const vAsciiArt = `
-\x1b[36m _    _______ ____           \x1b[0m  \x1b[1mOS\x1b[0m: Portfolio OS v1.0.0
-\x1b[36m| |  / / ___// __ \\          \x1b[0m  \x1b[1mHost\x1b[0m: React 19.0.0
-\x1b[36m| | / /\\__ \\/ /_/ /          \x1b[0m  \x1b[1mKernel\x1b[0m: Vite 6.2.0
-\x1b[36m| |/ /___/ / ____/           \x1b[0m  \x1b[1mUptime\x1b[0m: ${Math.floor(Math.random() * 24)} hours, ${Math.floor(Math.random() * 60)} mins
-\x1b[36m|___//____/_/                \x1b[0m  \x1b[1mPackages\x1b[0m: ${Math.floor(Math.random() * 100) + 200} (npm)
-\x1b[36m                             \x1b[0m  \x1b[1mShell\x1b[0m: Terminal.jsx
-\x1b[36m                             \x1b[0m  \x1b[1mResolution\x1b[0m: ${window.innerWidth}x${window.innerHeight}
-\x1b[36m                             \x1b[0m  \x1b[1mDE\x1b[0m: Custom Desktop Environment
-\x1b[36m                             \x1b[0m  \x1b[1mWM\x1b[0m: Framer Motion
-\x1b[36m                             \x1b[0m  \x1b[1mTheme\x1b[0m: macOS-inspired Dark
-\x1b[36m                             \x1b[0m  \x1b[1mIcons\x1b[0m: react-icons/cg
-\x1b[36m                             \x1b[0m  \x1b[1mTerminal\x1b[0m: Portfolio Terminal
-\x1b[36m                             \x1b[0m  \x1b[1mCPU\x1b[0m: JavaScript V8 Engine
+\x1b[36m =0=0=0=0=0=0=0=0=0=0=0=0=0=0\x1b[0m  \x1b[1mOS\x1b[0m: Winved OS v1.0.0
+\x1b[36m                             \x1b[0m  \x1b[1mHost\x1b[0m: React 19.0.0
+\x1b[36m                             \x1b[0m  \x1b[1mKernel\x1b[0m: Vite 6.2.0
+\x1b[36m                             \x1b[0m  \x1b[1mUptime\x1b[0m: ${Math.floor(Math.random() * 24)} hours, ${Math.floor(Math.random() * 60)} mins
+\x1b[36m                             \x1b[0m  \x1b[1mPackages\x1b[0m: ${Math.floor(Math.random() * 100) + 200} (npm)
+\x1b[36m                             \x1b[0m  \x1b[1mShell\x1b[0m: Turmiz v1.0.0
+\x1b[36m        _    _______ ____    \x1b[0m  \x1b[1mResolution\x1b[0m: ${window.innerWidth}x${window.innerHeight}
+\x1b[36m       | |  / / ___// __ \\  \x1b[0m  \x1b[1mDE\x1b[0m: Custom Desktop Environment
+\x1b[36m       | | / /\\__ \\/ /_/ / \x1b[0m  \x1b[1mWM\x1b[0m: Framer Motion
+\x1b[36m       | |/ /___/ / ____/    \x1b[0m  \x1b[1mTheme\x1b[0m: macOS Zentroid
+\x1b[36m       |___//____/_/         \x1b[0m  \x1b[1mIcons\x1b[0m: react-icons/cg And Icon8
+\x1b[36m                             \x1b[0m  \x1b[1mTerminal\x1b[0m: Terminal
+\x1b[36m       VSPCoderz             \x1b[0m  \x1b[1mCPU\x1b[0m: JavaScript V8 Engine
 \x1b[36m                             \x1b[0m  \x1b[1mGPU\x1b[0m: WebGL Renderer
 \x1b[36m                             \x1b[0m  \x1b[1mMemory\x1b[0m: ${Math.floor(Math.random() * 8) + 2}GB / 16GB
                                   
